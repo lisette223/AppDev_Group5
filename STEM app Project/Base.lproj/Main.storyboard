@@ -17,14 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UYc-vn-LLN">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UYc-vn-LLN">
                                 <rect key="frame" x="57" y="84" width="300" height="651"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stem" translatesAutoresizingMaskIntoConstraints="NO" id="eA9-wd-5JP">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="457"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="259"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNG-YK-6Ls">
-                                        <rect key="frame" x="117.5" y="467" width="65" height="79.5"/>
+                                        <rect key="frame" x="117.5" y="416.5" width="65" height="45"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -36,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGG-d9-sKl">
-                                        <rect key="frame" x="103.5" y="556.5" width="93" height="94.5"/>
+                                        <rect key="frame" x="103.5" y="606" width="93" height="45"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,14 +87,64 @@
                     <view key="view" contentMode="scaleToFill" id="3WS-nd-t13">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="FwX-gp-MFo">
+                                <rect key="frame" x="160" y="180" width="94" height="335"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XhI-ie-Sdo">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5wq-Jt-g53">
+                                        <rect key="frame" x="0.0" y="145" width="94" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mI0-0H-Ral">
+                                        <rect key="frame" x="0.0" y="290" width="94" height="45"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="WjC-Hm-Mhq" kind="show" id="SO0-p3-cxv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="XyF-0I-Z2t"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="FwX-gp-MFo" firstAttribute="centerX" secondItem="3WS-nd-t13" secondAttribute="centerX" constant="1" id="0qS-aF-qbg"/>
+                            <constraint firstItem="FwX-gp-MFo" firstAttribute="centerY" secondItem="3WS-nd-t13" secondAttribute="centerY" constant="1" id="WNj-Nw-k3h"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aWd-Ce-g5y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U18-Oi-IJa" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="412" y="-474"/>
+            <point key="canvasLocation" x="411.59420289855075" y="-474.10714285714283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wAH-WT-FL8">
+            <objects>
+                <viewController id="WjC-Hm-Mhq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m7e-dQ-1r3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xgZ-iT-LHS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mr9-Oj-Obl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UaY-kW-g2e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418" y="-473"/>
         </scene>
     </scenes>
     <resources>
@@ -102,6 +152,12 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
