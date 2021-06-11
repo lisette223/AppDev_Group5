@@ -10,6 +10,7 @@
 		5B5C9E0A26726319004FB67F /* TeachersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5C9E0926726319004FB67F /* TeachersViewController.swift */; };
 		5B5C9E0C26726351004FB67F /* TeacherPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5C9E0B26726351004FB67F /* TeacherPageViewController.swift */; };
 		5BA4247426726870008214F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4247326726870008214F3 /* LoginViewController.swift */; };
+		5BA4247626738658008214F3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4247526738658008214F3 /* SettingsViewController.swift */; };
 		CEF07F432633016A00FB4C47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF07F422633016A00FB4C47 /* AppDelegate.swift */; };
 		CEF07F452633016A00FB4C47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF07F442633016A00FB4C47 /* SceneDelegate.swift */; };
 		CEF07F472633016A00FB4C47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF07F462633016A00FB4C47 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		5B5C9E0926726319004FB67F /* TeachersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersViewController.swift; sourceTree = "<group>"; };
 		5B5C9E0B26726351004FB67F /* TeacherPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherPageViewController.swift; sourceTree = "<group>"; };
 		5BA4247326726870008214F3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5BA4247526738658008214F3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CEF07F3F2633016A00FB4C47 /* STEM app Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STEM app Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF07F422633016A00FB4C47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF07F442633016A00FB4C47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				CEF07F422633016A00FB4C47 /* AppDelegate.swift */,
+				5BA4247526738658008214F3 /* SettingsViewController.swift */,
 				5B5C9E0B26726351004FB67F /* TeacherPageViewController.swift */,
 				CEF07F442633016A00FB4C47 /* SceneDelegate.swift */,
 				CEF07F462633016A00FB4C47 /* ViewController.swift */,
@@ -148,6 +151,7 @@
 			files = (
 				5BA4247426726870008214F3 /* LoginViewController.swift in Sources */,
 				CEF07F472633016A00FB4C47 /* ViewController.swift in Sources */,
+				5BA4247626738658008214F3 /* SettingsViewController.swift in Sources */,
 				5B5C9E0A26726319004FB67F /* TeachersViewController.swift in Sources */,
 				5B5C9E0C26726351004FB67F /* TeacherPageViewController.swift in Sources */,
 				CEF07F432633016A00FB4C47 /* AppDelegate.swift in Sources */,

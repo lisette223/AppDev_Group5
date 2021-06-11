@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="STEM_app_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -356,21 +356,27 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mr9-Oj-Obl">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="gearshape" catalog="system" id="r5y-dn-hfN">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="gearshape" catalog="system" id="r5y-dn-hfN">
                             <connections>
                                 <segue destination="haa-CP-ZLq" kind="show" id="KDG-rd-UiU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="28l-Xf-ui3">
+                            <connections>
+                                <segue destination="zVx-ol-ekF" kind="unwind" unwindAction="unwindToIntro:" id="cwz-Rf-6DK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UaY-kW-g2e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zVx-ol-ekF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2327.536231884058" y="-473.4375"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="0be-dp-kef">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="haa-CP-ZLq" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="haa-CP-ZLq" customClass="SettingsViewController" customModule="STEM_app_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KgZ-uT-Ly7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -434,8 +440,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5tu-Ze-6T4">
-                                <rect key="frame" x="110" y="68" width="194" height="704.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5tu-Ze-6T4">
+                                <rect key="frame" x="110" y="106" width="194" height="704.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Classes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDj-ql-e4b">
                                         <rect key="frame" x="0.0" y="0.0" width="194" height="38.5"/>
@@ -494,6 +500,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qky-Lo-US6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5tu-Ze-6T4" firstAttribute="centerX" secondItem="wrd-Eu-pzI" secondAttribute="centerX" id="CvL-YW-Hlh"/>
+                            <constraint firstItem="5tu-Ze-6T4" firstAttribute="top" secondItem="qky-Lo-US6" secondAttribute="top" constant="50" id="JFI-X3-XLo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aVc-qt-rzQ"/>
                 </viewController>
@@ -729,7 +739,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="eYc-uZ-Nme"/>
-        <segue reference="zuR-Uc-aPb"/>
+        <segue reference="qLb-63-gbp"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="gearshape" catalog="system" width="128" height="121"/>
