@@ -15,7 +15,9 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    @IBAction func unwindToIntro(_ unwindSegue: UIStoryboardSegue) {
+       
+    } 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let portal = userNameLogin.text ?? ""
@@ -27,6 +29,7 @@ class LoginViewController: UIViewController {
       
             }
                     }
+        
     }
     }
  
