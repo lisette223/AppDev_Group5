@@ -752,7 +752,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="m4o-jD-fxC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="mjc-oD-497"/>
                 </viewController>
@@ -1057,7 +1057,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Missing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvg-1P-rBA">
-                                <rect key="frame" x="0.0" y="111" width="414" height="51.5"/>
+                                <rect key="frame" x="136" y="106.5" width="142.5" height="51.5"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <nil key="textColor"/>
@@ -1065,18 +1065,21 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIo-fs-QgP">
                                 <rect key="frame" x="329" y="214" width="38.5" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="OFg-Bv-5fP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="67"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignments missing:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ys-fZ-PFw">
-                                <rect key="frame" x="13" y="250" width="308" height="39.5"/>
+                                <rect key="frame" x="13" y="234.5" width="308" height="39.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="144" translatesAutoresizingMaskIntoConstraints="NO" id="Fur-7G-MB2">
-                                <rect key="frame" x="15" y="391" width="384.5" height="242"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="144" translatesAutoresizingMaskIntoConstraints="NO" id="Fur-7G-MB2">
+                                <rect key="frame" x="15" y="409.5" width="384.5" height="242"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poem: Due Yesterday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obn-Pw-s3V">
                                         <rect key="frame" x="0.0" y="0.0" width="384.5" height="49"/>
@@ -1098,15 +1101,18 @@
                         <viewLayoutGuide key="safeArea" id="zXI-4L-28U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CIo-fs-QgP" firstAttribute="top" secondItem="wvg-1P-rBA" secondAttribute="bottom" constant="51.5" id="2IJ-iJ-RfO"/>
-                            <constraint firstItem="9ys-fZ-PFw" firstAttribute="leading" secondItem="zXI-4L-28U" secondAttribute="leading" constant="13" id="7js-p1-Dj4"/>
-                            <constraint firstItem="wvg-1P-rBA" firstAttribute="top" secondItem="zXI-4L-28U" secondAttribute="top" constant="111" id="LR3-Ma-6pg"/>
-                            <constraint firstItem="wvg-1P-rBA" firstAttribute="trailing" secondItem="zXI-4L-28U" secondAttribute="trailing" id="MWP-zI-G19"/>
-                            <constraint firstItem="CIo-fs-QgP" firstAttribute="leading" secondItem="9ys-fZ-PFw" secondAttribute="trailing" constant="8" symbolic="YES" id="TqT-4q-oYw"/>
-                            <constraint firstItem="CIo-fs-QgP" firstAttribute="leading" secondItem="9ys-fZ-PFw" secondAttribute="trailing" constant="8" symbolic="YES" id="hCw-fc-dHk"/>
-                            <constraint firstItem="9ys-fZ-PFw" firstAttribute="top" secondItem="wvg-1P-rBA" secondAttribute="bottom" constant="87.5" id="l2X-jh-Xfs"/>
-                            <constraint firstItem="wvg-1P-rBA" firstAttribute="leading" secondItem="zXI-4L-28U" secondAttribute="leading" id="nGs-nA-bnv"/>
-                            <constraint firstItem="zXI-4L-28U" firstAttribute="trailing" secondItem="CIo-fs-QgP" secondAttribute="trailing" constant="46.5" id="odn-ar-N0E"/>
+                            <constraint firstItem="zXI-4L-28U" firstAttribute="trailing" secondItem="wvg-1P-rBA" secondAttribute="trailing" constant="135.5" id="41h-FR-K2d"/>
+                            <constraint firstItem="zXI-4L-28U" firstAttribute="trailing" secondItem="Fur-7G-MB2" secondAttribute="trailing" constant="14.5" id="5cp-YU-xTI"/>
+                            <constraint firstItem="9ys-fZ-PFw" firstAttribute="leading" secondItem="zXI-4L-28U" secondAttribute="leading" constant="13" id="Bzh-tH-w09"/>
+                            <constraint firstItem="CIo-fs-QgP" firstAttribute="centerY" secondItem="9ys-fZ-PFw" secondAttribute="centerY" id="MhG-OF-iwK"/>
+                            <constraint firstItem="wvg-1P-rBA" firstAttribute="top" secondItem="zXI-4L-28U" secondAttribute="top" constant="106.5" id="XLK-p2-oMh"/>
+                            <constraint firstItem="CIo-fs-QgP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9ys-fZ-PFw" secondAttribute="trailing" symbolic="YES" id="b9g-Pq-tzi"/>
+                            <constraint firstItem="Fur-7G-MB2" firstAttribute="leading" secondItem="zXI-4L-28U" secondAttribute="leading" constant="15" id="bn0-i2-KJf"/>
+                            <constraint firstItem="CIo-fs-QgP" firstAttribute="top" secondItem="zXI-4L-28U" secondAttribute="top" constant="214" id="crx-Fi-Tlh"/>
+                            <constraint firstItem="9ys-fZ-PFw" firstAttribute="top" secondItem="wvg-1P-rBA" secondAttribute="bottom" constant="76.5" id="mCV-Wc-DYH"/>
+                            <constraint firstItem="zXI-4L-28U" firstAttribute="trailing" secondItem="CIo-fs-QgP" secondAttribute="trailing" constant="46.5" id="qXd-ef-goj"/>
+                            <constraint firstItem="zXI-4L-28U" firstAttribute="bottom" secondItem="Fur-7G-MB2" secondAttribute="bottom" constant="156.5" id="rEt-wI-vEr"/>
+                            <constraint firstItem="wvg-1P-rBA" firstAttribute="leading" secondItem="zXI-4L-28U" secondAttribute="leading" constant="136" id="tjd-QI-kB8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yOO-Rr-XDD"/>
@@ -1503,7 +1509,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3MI-3y-9CM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Iu-jH-F3Y"/>
                 </viewController>
